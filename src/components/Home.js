@@ -106,7 +106,7 @@ this.updateMovieRecord(movie.id)
             
             <h1>{item.genre}</h1>
             <div className="titles-wrapper">
-                  <MovieComponent movie={item} onClickHandler={this.addMovieToList}/>
+                  <MovieComponent movie={item} onClickHandler={this.addMovieToList.bind(this)}/>
               </div>
               </div>
             </div>: null}
